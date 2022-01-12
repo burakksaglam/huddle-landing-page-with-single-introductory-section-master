@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("./images/bg-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-content {
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-container {
+    
+}
+
+.container-mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.whole-text {
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: -5px;
+    font-size: 36px;
+    font-family: 'poppins';
+    font-weight: 600;
+    color: white;
+}
+
+.paragraph {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 60px;
+    border-radius: 30px;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+}
+
+ion-icon {
+    font-size: 50px;
+    margin: 20px;
+    color: white;
+}
+
+footer {
+    position: sticky;
+    top: 100vh;
+    color: white;
+    background-color: black;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+    
+.attribution a { 
+    color: pink; 
+}
