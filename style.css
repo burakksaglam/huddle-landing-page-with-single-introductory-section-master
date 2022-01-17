@@ -118,6 +118,12 @@ footer {
     html, body {
         height: 100%;
         overflow-y: auto !important;
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+
+    body {
+        height: auto !important;
     }
 
     .img-container {
