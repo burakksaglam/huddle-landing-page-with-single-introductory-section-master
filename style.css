@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -32,9 +33,7 @@ main {
     justify-content: space-between;
 }
 
-.img-container {
-    
-}
+.img-container {}
 
 .container-mid {
     display: flex;
@@ -48,7 +47,7 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    
+
 }
 
 .whole-text {
@@ -92,7 +91,7 @@ ion-icon {
 }
 
 ion-icon:hover {
-    color:hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
 }
 
 
@@ -104,20 +103,29 @@ footer {
 }
 
 .attribution {
-    font-size: 11px; 
+    font-size: 11px;
     text-align: center;
 }
-    
-.attribution a { 
-    color: pink; 
+
+.attribution a {
+    color: pink;
 }
 
+
+
 @media only screen and (max-width: 375px) {
-    .inner-content {
+    html, body {
+        overflow-y: auto !important;
+    }
+
+    body {
+        height: auto !important;
+    }
+
+    .img-container {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .container-mid {
@@ -127,10 +135,16 @@ footer {
     }
 
     .container-mid img {
-        width: 300px;
-        height: auto;
+        width: 250px;
     }
-    
+
+    .whole-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
     h1 {
         text-align: center;
     }
@@ -139,16 +153,10 @@ footer {
         text-align: center;
     }
 
-    .whole-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .social-media {
         display: flex;
         flex-direction: row;
         justify-content: center;
-
     }
+
 }
